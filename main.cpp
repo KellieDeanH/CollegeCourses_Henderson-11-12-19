@@ -1,5 +1,11 @@
 // kellie Henderson, Dr_T, 11/12//19
+/*
+11/12/19, Dr.Tyson McMillan, TCC TR
+Skills: Learned more about classes, protected members of the classes, and how to access them.
+The purpose of this program is to find out how much it will cost to go to school with lab fees.
 
+
+*/
 #include <iostream>
 #include<string>
 using namespace std;
@@ -27,6 +33,7 @@ class LabCourse : public CollegeCourse
 {
   private:
     double labFee = 30.25;
+    
   public:     // the childs syntax via the initalizer list method.
     LabCourse(string d, int cN, int cH, double t) : CollegeCourse(d,cN,cH,t){ } 
     double getLabFee() const {return labFee;}
